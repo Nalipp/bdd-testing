@@ -12,9 +12,9 @@ group :development, :test do<br>
 end</p>
 
 <p> and:<br>
-group :test do<br>
+<strong>group :test do<br>
   gem 'capybara', '2.4.4'<br>
-end</p>
+end</strong></p>
 
 <p>$ bundle install</p>
 <p>rails generate rspec:install</p>
