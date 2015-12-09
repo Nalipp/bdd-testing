@@ -23,4 +23,15 @@ end</strong></p>
 <p>$guard init rspec</p>
 
 <h4>update Guardfile</h4>
-<p>guard :rspec, cmd: "rspec" do</p>
+<p>guard :rspec, cmd: "rspec" do</p><br>
+
+<p>
+<strong>watch(%r{^app/controllers/(.+)_(controller)\.rb$}) { "spec/features"}</strong><br>
+<strong>watch(%r{^app/models/(.+)\.rb$}) { "spec/features" }<br>
+watch(rails.controllers) do |m|</strong>
+</p>
+
+<p> and run all specs </p>
+
+<p><strong>watch(rails.routes)          { "spec" } #{}"#{rspec.spec_dir}/routing" }</strong><br>
+<strong>watch(rails.view_dirs)     { "spec/features" } # { |m| rspec.spec.("features/#{m[1]}") }</strong></p>
