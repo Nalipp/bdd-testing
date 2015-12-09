@@ -19,8 +19,8 @@ end</p>
 end</strong></p>
 
 <p>$ bundle install</p>
-<p>rails generate rspec:install</p>
-<p>guard init rspec</p>
+<p>$rails generate rspec:install</p>
+<p>$guard init rspec</p>
 
 <h4>update Guardfile</h4>
-<p>guard :rspec, cmd: "bin/rspec" do</p>
+<p>guard :rspec, cmd: "rspec" do</p>
