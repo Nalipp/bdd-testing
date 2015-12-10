@@ -11,6 +11,13 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <div class="navbar-left">
+            <p class="navbar-text">
+              Signed in as <%= "#{current_user.email}" %>
+            </p>
+          </div>
+        <% end %>
         <li class="take-action"><a href="#">Home</a></li>
         <li><%= link_to "sign up", new_user_registration_path %></li>
         <li><%= link_to "log in", new_user_session_path %></li>
